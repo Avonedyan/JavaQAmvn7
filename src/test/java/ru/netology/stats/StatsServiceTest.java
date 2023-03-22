@@ -16,7 +16,7 @@ public class StatsServiceTest {
         StatService service = new StatService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedAverageSum = 15;
-        long actualAverageSum = service.allSalesAverageSum(sales);
+        int actualAverageSum = service.allSalesAverageSum(sales);
         Assertions.assertEquals(expectedAverageSum, actualAverageSum);
     }
     @Test

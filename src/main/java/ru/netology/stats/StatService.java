@@ -39,8 +39,8 @@ public class StatService {
 
     public int lowSalesMonths(int[] sales) {
         int lowSalesMonths = 0;
-        for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < allSalesAverageSum(sales)) {
+        for (int sale : sales) {
+           if (sale < allSalesAverageSum(sales)) {
                 lowSalesMonths++;
             }
         }
@@ -49,8 +49,8 @@ public class StatService {
 
     public int highSalesMonths(int[] sales) {
         int highSalesMonths = 0;
-        for (int i = 0; i < sales.length; i++) {
-            if (sales[i] > allSalesAverageSum(sales)) {
+        for (long sale : sales) {
+            if (sale > allSalesAverageSum(sales)) {
                 highSalesMonths++;
             }
         }
